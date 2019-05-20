@@ -13,7 +13,7 @@ public class AtletaTreinos extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_log_in);
+        setContentView(R.layout.activity_atleta_treinos);
 
         buttonpre = (Button) findViewById(R.id.button5);
         buttonpre.setOnClickListener(new View.OnClickListener() {

@@ -29,6 +29,10 @@ public  class create_account extends AppCompatActivity implements AdapterView.On
                     Intent intent =new Intent(create_account.this,Treinador.class) ;
                     startActivity(intent);
                 }
+                else if(spinner.getSelectedItem().toString().equals("Atleta")) {
+                    Intent intent =new Intent(create_account.this,AtletaInit.class) ;
+                    startActivity(intent);
+                }
 
             }
         });
