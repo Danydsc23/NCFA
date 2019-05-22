@@ -6,22 +6,37 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class Treinador extends AppCompatActivity {
     Button tre;
     ImageButton back;
     Button competicao;
     Button info;
+    TextView username;
+    Button logout;
+    TreinadorUser mario;
+    Button logOut;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_treinador);
+
 
         tre=findViewById(R.id.tre);
         tre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent =new Intent(Treinador.this,Treinos_Treinador.class) ;
+                startActivity(intent);
+            }
+        });
+        logOut=findViewById(R.id.logout);
+        logOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(Treinador.this,MainActivity.class) ;
                 startActivity(intent);
             }
         });
@@ -49,6 +64,9 @@ public class Treinador extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        username=findViewById(R.id.username);
+        username.setText("Ola  "+LogIn.username);
 
     }
 }

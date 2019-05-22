@@ -5,10 +5,11 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class AtletaInit extends AppCompatActivity {
     private Button buttontr;
-
+    ImageButton back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +33,14 @@ public class AtletaInit extends AppCompatActivity {
         buttontr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { openAtletaInfo();
+            }
+        });
+        back=findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(AtletaInit.this,MainActivity.class) ;
+                startActivity(intent);
             }
         });
     };

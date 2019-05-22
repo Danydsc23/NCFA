@@ -7,6 +7,14 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
+    <ImageButton
+            android:layout_width="86dp"
+            android:background="@drawable/buttonshape"
+
+            android:layout_height="wrap_content" app:srcCompat="@android:drawable/ic_menu_revert"
+            android:id="@+id/back" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="28dp" android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
     <Button
             android:id="@+id/button3"
             android:layout_width="163dp"
@@ -60,14 +68,5 @@
             app:layout_constraintHorizontal_bias="0.488"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button8"/>
-
-    <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="@color/colorPrimaryDark"
-            app:srcCompat="@android:drawable/ic_menu_send"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="675dp" />
 
 </android.support.constraint.ConstraintLayout>

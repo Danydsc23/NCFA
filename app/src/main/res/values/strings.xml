@@ -7,10 +7,12 @@
         <item>Convidado</item>
     </string-array>
     <string-array name="Escaloes">
-        <item>sub12</item>
-        <item>sub13</item>
+        <item>sub8</item>
         <item>sub14</item>
-        <item>sub15</item>
+    </string-array>
+    <string-array name="Competicoes">
+        <item>sub8-CompetiçaoX</item>
+        <item>sub14-competiçaoY</item>
     </string-array>
     <string name="title_activity_login">Sign in</string>
     <!-- Strings related to login -->

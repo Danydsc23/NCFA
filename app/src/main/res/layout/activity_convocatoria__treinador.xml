@@ -7,4 +7,95 @@
         android:layout_height="match_parent"
         tools:context=".Convocatoria_Treinador">
 
+    <Button
+            android:text="Enviar"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:background="@drawable/buttonshape"
+
+            android:id="@+id/enviar"
+            style="@android:style/Widget.Material.Light.Button.Toggle"
+            android:textSize="12sp" android:textAllCaps="false" android:textColor="@color/colorPrimaryDark"
+            android:layout_marginBottom="100dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="1.0"/>
+    <Button
+            android:text="Log out"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:background="@drawable/buttonshape"
+
+            android:id="@+id/logout"
+            style="@android:style/Widget.Material.Light.Button.Toggle"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.949"
+            android:textSize="12sp" android:textAllCaps="false" android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="92dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:id="@+id/textView7"
+            android:layout_width="232dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="8dp"
+            android:text="Convocatoria"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textSize="36sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:textColor="@color/colorPrimaryDark"/>
+    <CheckBox
+            android:layout_width="173dp"
+            android:layout_height="33dp"
+            android:id="@+id/checkBox"
+            android:layout_marginTop="48dp"
+            app:layout_constraintTop_toBottomOf="@+id/spinner1" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.243"/>
+    <CheckBox
+            android:layout_width="173dp"
+            android:layout_height="33dp"
+            android:id="@+id/checkBox2" android:layout_marginTop="28dp"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="176dp"
+    />
+    <CheckBox
+            android:layout_width="173dp"
+            android:layout_height="33dp"
+            android:id="@+id/checkBox3" android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox2" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="176dp"
+    />
+    <CheckBox
+            android:layout_width="173dp"
+            android:layout_height="33dp"
+            android:id="@+id/checkBox4" android:layout_marginTop="28dp"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox3" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="64dp" app:layout_constraintStart_toStartOf="@+id/checkBox3"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <CheckBox
+            android:layout_width="173dp"
+            android:layout_height="33dp"
+            android:id="@+id/checkBox5"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox4" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="176dp"/>
+    <CheckBox
+            android:layout_width="173dp"
+            android:layout_height="33dp"
+            android:id="@+id/checkBox6" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox5" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="176dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.0"/>
+    <Spinner
+            android:layout_width="211dp"
+            android:layout_height="34dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/spinner1" android:layout_marginTop="140dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.31"/>
 </android.support.constraint.ConstraintLayout>
