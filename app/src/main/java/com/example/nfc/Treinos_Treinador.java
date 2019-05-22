@@ -6,15 +6,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
 
-public class Treinos_Treinador extends AppCompatActivity  {
+public class Treinos_Treinador extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     ImageButton back;
     Button presencas;
-    TextView username;
-    Button logOut;
+    Spinner spinner;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_treinos__treinador);
+
         back=findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,19 +31,21 @@ public class Treinos_Treinador extends AppCompatActivity  {
                 startActivity(intent);
             }
         });
-        logOut=findViewById(R.id.logout);
-        logOut.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent =new Intent(Treinos_Treinador.this,MainActivity.class) ;
-                startActivity(intent);
-            }
-        });
-        username=findViewById(R.id.username);
-        username.setText("Ola  "+LogIn.username);
 
+        spinner =(Spinner) findViewById(R.id.spinner1);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.Escaloes, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+        spinner.setOnItemSelectedListener(this);
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
 
     }
 
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
 
+    }
 }

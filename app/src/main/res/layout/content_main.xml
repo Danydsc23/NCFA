@@ -12,8 +12,8 @@
             android:id="@+id/button"
             android:layout_width="131dp"
             android:layout_height="47dp"
-            android:layout_marginStart="228dp"
-            android:layout_marginTop="552dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="492dp"
             android:background="@drawable/buttonshape"
             android:text="LogIn"
             app:layout_constraintStart_toStartOf="parent"
@@ -23,11 +23,11 @@
             android:id="@+id/button2"
             android:layout_width="131dp"
             android:layout_height="47dp"
-            android:layout_marginStart="48dp"
+            android:layout_marginStart="28dp"
             android:background="@drawable/buttonshape"
             android:text="Create Account"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="552dp" app:layout_constraintTop_toTopOf="parent"/>
+            android:layout_marginTop="588dp" app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
         android:id="@+id/imageView"
@@ -81,23 +81,21 @@
         app:srcCompat="@mipmap/vela" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="80dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="160dp"
-        android:layout_marginLeft="160dp"
-        android:layout_marginTop="228dp"
-        android:layout_marginEnd="160dp"
-        android:layout_marginRight="160dp"
-        android:text="NCFA"
-        android:textAllCaps="false"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            android:id="@+id/textView"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="228dp"
+            android:layout_marginEnd="160dp"
+            android:text="NCFA"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
             android:id="@+id/textView2"
@@ -116,14 +114,14 @@
     <TextView
             android:id="@+id/textView3"
             android:layout_width="342dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="228dp"
-            android:layout_marginTop="36dp"
-            android:layout_marginEnd="28dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="20dp"
             android:text="Nautical Club Formation Aveiro"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.551"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" android:textColor="@color/colorPrimaryDark"/>
 

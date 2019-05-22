@@ -5,20 +5,31 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
-public class AtletaTreinos extends AppCompatActivity {
+public class AtletaTreino extends AppCompatActivity {
     private Button buttonpre;
+    private ImageButton back;
     private Button buttoncal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_atleta_treinos);
+        setContentView(R.layout.activity_atleta_treino);
 
         buttonpre = (Button) findViewById(R.id.button5);
         buttonpre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { openAtletaTreinoPresence();
+            }
+        });
+
+        back=findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(AtletaTreino.this,AtletaInit.class) ;
+                startActivity(intent);
             }
         });
 
@@ -28,6 +39,7 @@ public class AtletaTreinos extends AppCompatActivity {
             public void onClick(View v) { openAtletaTreinoCalendario();
             }
         });
+
     }
 
     public void openAtletaTreinoPresence() {
@@ -39,6 +51,4 @@ public class AtletaTreinos extends AppCompatActivity {
         Intent intent = new Intent(this, AtletaTreinoCalendario.class);
         startActivity(intent);
     }
-
-
 }
