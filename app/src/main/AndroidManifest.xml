@@ -13,6 +13,7 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".AtletaCompeticaoCalendario">
         </activity>
         <activity android:name=".AtletaCompeticaoPresence">
@@ -24,6 +25,9 @@
         <activity android:name=".AtletaInformacao">
         </activity>
         <activity android:name=".AtletaCompeticao">
+=======
+        <activity android:name=".AtletaInit">
+>>>>>>> parent of c1bd742... continuacao
         </activity>
         <activity android:name=".AtletaTreino">
         </activity>

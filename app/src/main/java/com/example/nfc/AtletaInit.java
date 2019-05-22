@@ -10,6 +10,7 @@ public class AtletaInit extends AppCompatActivity {
     private Button buttontr;
     private Button buttoncomp;
     private Button buttoninfo;
+=======
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
